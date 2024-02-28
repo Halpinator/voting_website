@@ -24,6 +24,10 @@ body {
     cursor: pointer;
 }
 
+.submit-button:hover {
+    cursor: pointer;
+}
+
 .poll__option:not(:last-child) {
     margin-bottom: 1rem;
 }
@@ -76,6 +80,19 @@ body {
     position: absolute;
     right: 8px;
     text-align: right;
+}
+
+.submit-button {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid #8C8C8C;
+    border-radius: 10px;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 img {

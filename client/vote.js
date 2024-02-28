@@ -42,15 +42,17 @@ class Poll {
 
         }
 
-        const existingSubmitButton = this.root.querySelector("button");
+        const existingSubmitButton = this.root.querySelector(".submit-button");
         if (existingSubmitButton) {
             existingSubmitButton.remove();
         }
 
-         const submitButton = document.createElement("button");
-         submitButton.textContent = "Submit";
-         submitButton.addEventListener("click", this._submit.bind(this));
-         this.root.appendChild(submitButton);
+        const submitDiv = document.createElement("div");
+        submitDiv.className = "submit-button";
+        submitDiv.textContent = "SUBMIT";
+        submitDiv.style.color = "#996BF9";
+        submitDiv.addEventListener("click", this._submit.bind(this));
+        this.root.appendChild(submitDiv);
     }
     _submit() {
         if (!this.selected) {
@@ -69,9 +71,6 @@ class Poll {
             window.location.href = "index.html";
             
         })
-
-        // Implement the submit logic here
-        console.log("Submit button clicked!");
     }
 }
 
