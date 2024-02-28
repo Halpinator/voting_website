@@ -16,7 +16,8 @@ body {
 .poll {
     max-width: 400px;
     margin: auto;
-    font-family: sans-serif;
+    font-family: 'Outfit';
+    src: url('Outfit.ttf');
 }
 
 .poll__option:hover {
@@ -31,13 +32,13 @@ body {
     background: #009508;
 }
 
-.poll__option--selected .poll__option-info {
+.poll__option--selected .poll__label {
     font-weight: bold;
 }
 
 .poll__title {
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: normal;
+    font-size: 2rem;
     margin: 1.5rem;
     text-align: center;
 }
@@ -46,7 +47,7 @@ body {
 .poll__option-fill {
     position: absolute;
     height: 100%;
-    background-color: #8c63ac; 
+    background-color: #996BF9; 
 }
 
 .poll__option-info {
@@ -59,7 +60,7 @@ body {
 .poll__option {
     display: flex;
     position: relative;
-    background-color: #8c63ac4b;
+    background-color: #986bf948;
     border: 3px solid white;
     border-radius: 10px;
     height: 80px;
@@ -68,6 +69,7 @@ body {
 
 .poll__label {
     position: absolute;
+    font-size: 1.5rem;
 }
 
 .poll__percentage {
