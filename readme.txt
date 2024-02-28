@@ -4,6 +4,8 @@ run "npm start"
 
 Open vote.html in your browser of choice (I used Chrome when developing)
 
+server/data.json can be used to edit options and amount of votes
+
 This website allows for as many poll options as needed (is not limited to 3)
 
 Oversights:
