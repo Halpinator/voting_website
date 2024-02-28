@@ -1,0 +1,83 @@
+/* Reset some default styling */
+body, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+}
+
+.poll {
+    max-width: 400px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.poll__option:hover {
+    cursor: pointer;
+}
+
+.poll__option:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.poll__option--selected .poll__option-fill {
+    background: #009508;
+}
+
+.poll__option--selected .poll__option-info {
+    font-weight: bold;
+}
+
+.poll__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+
+.poll__option-fill {
+    position: absolute;
+    height: 100%;
+    background-color: #8c63ac; 
+}
+
+.poll__option-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+
+.poll__option {
+    display: flex;
+    position: relative;
+    background-color: #8c63ac4b;
+    border: 3px solid white;
+    border-radius: 10px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.poll__label {
+    position: absolute;
+}
+
+.poll__percentage {
+    position: absolute;
+    right: 8px;
+    text-align: right;
+}
+
+img {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+}
